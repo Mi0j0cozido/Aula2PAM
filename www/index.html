@@ -7,11 +7,23 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
+    <script type="text/javascript" src="components/script.js">
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <h1 id="titulo"> CALCULADORA DE IMC </h1>
+    <label for="inputnome">Nome: </label>
+    <input type="text" placeholder="Insira seu nome" id="nome" name="inputnome">
+        <br>
+    <label for="inputaltura">Altura: </label>
+    <input type="text" placeholder="Insira sua altura em metros" id="altura" name="inputaltura" step="0.01">
+        <br>
+    <label for="inputmassa">Massa: </label>
+    <input type="number" placeholder="Insira sua massa em Kg" id="massa" name="inputmassa" step="0.1">
+        <br>
+    <input type="button" value="Calcular" id="btnCalcImc" onclick="CalcImc()" >
+    <p id="resultado"></p>
+    <p id="tabela"></p>
+
 </body>
 </html>
